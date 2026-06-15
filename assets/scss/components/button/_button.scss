@@ -1,0 +1,28 @@
+.button {
+   padding: 9px 18px;
+   font-size: 14px;
+    font-weight: 600;
+   border-radius: 5px;
+
+   &--primary {
+      background: #047cfc;
+      transition: all .3s;
+   }
+
+   &--secondary {
+      color: #6b768a;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all .3s;
+   }
+
+   @media(any-hover: hover){
+      &--secondary:hover{
+         color: white;
+         border-color: white;
+      }
+
+      &--primary:hover {
+         background: #0064ff;
+      }
+   }
+}
