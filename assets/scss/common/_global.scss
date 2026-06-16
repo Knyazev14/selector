@@ -8,6 +8,33 @@ body {
    font-size: 16px;
 }
 
+body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media (min-width: $desktop) {
+        &::-webkit-scrollbar {
+            display: block;
+            width: 4px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: rgb(255, 255, 255);
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgb(32, 36, 45);
+            cursor: pointer;
+
+            &:hover {
+                background: #0064ff;
+            }
+        }
+
+    }
+}
+
 .wrapper {
    display: flex;
    flex-direction: column;

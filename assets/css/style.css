@@ -116,6 +116,26 @@ body {
   font-size: 16px;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+@media (min-width: 1280px) {
+  body::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+  }
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+  }
+  body::-webkit-scrollbar-thumb {
+    background: rgb(32, 36, 45);
+    cursor: pointer;
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background: #0064ff;
+  }
+}
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
