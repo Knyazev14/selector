@@ -673,7 +673,12 @@ body {
           flex-direction: column;
   gap: 30px;
   background: #191d25;
-  padding: 40px 20px;
+  padding: 30px 10px;
+}
+@media (min-width: 768px) {
+  .bets {
+    padding: 40px 20px;
+  }
 }
 .bets__top {
   display: -webkit-box;
@@ -690,18 +695,30 @@ body {
 }
 .bets__title {
   text-align: center;
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  .bets__title {
+    font-size: 32px;
+  }
 }
 .bets__txt {
   text-align: center;
   line-height: 1.3;
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  .bets__txt {
+    font-size: 16px;
+  }
 }
 .bets__wrap {
   overflow-x: auto;
+  background: #2d3442;
+  border-radius: 10px;
 }
 .bets__table {
   width: 100%;
-  background: #2d3442;
-  border-radius: 10px;
   padding: 15px;
   border-collapse: separate;
   border-spacing: 0;
