@@ -1,8 +1,12 @@
 .sidebar{
    display: none;
    @media(min-width:$desktop){
-      display: block;
-      flex: 1 1 30%;
+      position: sticky;
+      top: 0;
+      display: flex;
+      padding: 15px;
+      align-self: flex-start;
+      flex: 1 1 20%;
       background: rgb(25, 29, 37);
    }
 }

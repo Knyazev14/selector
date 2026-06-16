@@ -1,38 +1,64 @@
 $tablet: 768px;
 $desktop: 1280px;
 
-body{
+body {
    background-color: rgb(32, 36, 45);
    color: rgb(255, 255, 255);
    font-family: Arial, Helvetica, sans-serif;
    font-size: 16px;
 }
 
-.wrapper{
+.wrapper {
    display: flex;
    flex-direction: column;
    min-height: 100%;
 }
 
-.container{
+.container {
    max-width: 100%;
    padding: 0 4%;
    margin: 0 auto;
-   @media(min-width:$desktop){
+
+   @media(min-width:$desktop) {
       max-width: 1440px;
       padding: 0 20px;
    }
 }
 
 
-.main{
+.main {
    flex: 1 1 auto;
 
-   &__content-body{
+   &__content-body {
       display: flex;
+      gap: 15px;
    }
 }
 
-.content{
-   flex: 1 1 70%;
+.content {
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+   flex: 1 1 80%;
+   overflow: hidden;
+}
+
+.title {
+   font-weight: 700;
+}
+
+.h1 {
+   font-size: 38px;
+
+   @media(min-width:$desktop) {
+      font-size: 50px;
+   }
+}
+
+.h2 {
+   font-size: 32px;
+
+   @media(min-width:$desktop) {
+      font-size: 38px;
+   }
 }
