@@ -15,7 +15,7 @@
       display: flex;
       width: calc(($card-width + $gap) * $cards * 2); 
       gap: $gap;
-      animation: scrollProviders 10s linear infinite;
+      animation: scrollProviders 10s linear infinite .4s;
       will-change: transform;
       backface-visibility: hidden;
       transform: translateZ(0);

@@ -518,8 +518,8 @@ body::-webkit-scrollbar {
   display: flex;
   width: 2200px;
   gap: 20px;
-  -webkit-animation: scrollProviders 10s linear infinite;
-          animation: scrollProviders 10s linear infinite;
+  -webkit-animation: scrollProviders 10s linear infinite 0.4s;
+          animation: scrollProviders 10s linear infinite 0.4s;
   will-change: transform;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
