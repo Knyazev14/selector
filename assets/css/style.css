@@ -143,6 +143,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  margin-top: 75px;
 }
 .main__content-body {
   display: -webkit-box;
@@ -188,6 +189,13 @@ body {
   }
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
 .header__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,7 +345,7 @@ body {
 @media (min-width: 1280px) {
   .sidebar {
     position: sticky;
-    top: 0;
+    top: 75px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -554,6 +562,168 @@ body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding: 30px 15px;
+  border-radius: 6px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (min-width: 768px) {
+  .promo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 40px 30px;
+  }
+}
+.promo__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .promo__info {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 40px;
+  }
+}
+.promo__title {
+  line-height: 1.2;
+}
+.promo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 20px 15px;
+  border-radius: 6px;
+}
+@media (min-width: 768px) {
+  .promo__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .promo__list {
+    gap: 20px 40px;
+  }
+}
+.promo__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+.promo__list-txt {
+  font-weight: 600;
+}
+.promo__img {
+  width: 100%;
+  max-width: 310px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.bets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  background: #191d25;
+  padding: 40px 20px;
+}
+.bets__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.bets__title {
+  text-align: center;
+}
+.bets__txt {
+  text-align: center;
+  line-height: 1.3;
+}
+.bets__wrap {
+  overflow-x: auto;
+}
+.bets__table {
+  width: 100%;
+  background: #2d3442;
+  border-radius: 10px;
+  padding: 15px;
+  border-collapse: separate;
+  border-spacing: 0;
+  white-space: nowrap;
+}
+.bets__table th {
+  color: #5e6a7f;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+.bets__table td {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  text-align: center;
+}
+.bets__table tr:nth-child(even) {
+  background: #313949;
+}
+.bets__table .currency {
+  color: #2dc53a;
 }
 
 .footer {
