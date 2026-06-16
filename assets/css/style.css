@@ -180,7 +180,7 @@ body::-webkit-scrollbar {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 50px;
+  gap: 60px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 80%;
           flex: 1 1 80%;
@@ -460,6 +460,11 @@ body::-webkit-scrollbar {
             align-items: center;
   }
 }
+@media (min-width: 1280px) {
+  .main-banner {
+    padding: 70px 0;
+  }
+}
 .main-banner__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -508,6 +513,11 @@ body::-webkit-scrollbar {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+}
+@media (min-width: 1280px) {
+  .providers {
+    margin-bottom: 100px;
+  }
 }
 .providers__slider {
   overflow: hidden;
